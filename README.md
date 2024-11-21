@@ -25,7 +25,7 @@ It offers a one-stop solution for creating detailed itineraries, exploring user-
 
 **Instructions:**
 
-Option 1. Download localy in your computer:
+Option 1. Download locally on your computer:
 
    ```bash
    1. Click "<> Code" 
