@@ -27,13 +27,15 @@ It offers a one-stop solution for creating detailed itineraries, exploring user-
 
 Option 1. Download localy in your computer:
 
+   ```bash
    1. Click "<> Code" 
    2. See "Local"
    3. Download Zip: file name(Tripmati-main.zip)
+   ```
 
 Option 2. Clone this repository:
 
    ```bash
    git clone [https://github.com/](https://github.com/)citrixlab/tripmatic.git
-
+   ```
 
