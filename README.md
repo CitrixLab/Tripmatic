@@ -1,7 +1,7 @@
 # Tripmatic App
 
 <img src="frontend/assets/logo.png" alt="Tripmatic Logo" width="200px">
-This is a capstone project developed by UST Students for seamless travel planning.
+This is a capstone project developed by UST IT Students for seamless travel planning.
 It offers a one-stop solution for creating detailed itineraries, exploring user-shared guides, and managing bookings efficiently.
 
 ## Features
