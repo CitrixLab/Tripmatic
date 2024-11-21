@@ -30,7 +30,7 @@ Option 1. Download locally on your computer:
    ```bash
    1. Click "<> Code" 
    2. See "Local"
-   3. Download Zip: file name "Tripmati-main.zip"
+   3. Download Zip: file name "Tripmatic-main.zip"
    ```
 
 Option 2. Clone this repository:
