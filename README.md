@@ -25,7 +25,11 @@ It offers a one-stop solution for creating detailed itineraries, exploring user-
 
 **Instructions:**
 
-Option 1. Download directly to your computer in Zip File(Tripmatic.zip)
+Option 1. Download localy to your computer:
+
+   1. Click "<> Code" 
+   2. See "Local"
+   3. Download in Zip File(Tripmatic.zip)
 
 Option 2. Clone this repository:
 
