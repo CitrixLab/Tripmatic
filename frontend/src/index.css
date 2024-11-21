@@ -1,0 +1,436 @@
+*,
+html {
+  margin: 0px;
+}
+
+.search .wrapper:first-child input {
+  padding-bottom: 8px;
+}
+
+.search .wrapper:first-child li svg {
+}
+
+.dropIcon {
+  display: block !important;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+  background-color: white;
+  color: #59595c;
+  border-bottom: 2px solid rgba(124, 124, 124, 0.2);
+  position: relative;
+  padding: 0 !important;
+  padding-inline: 15% !important;
+  padding-left: 15% !important;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  height: auto;
+  width: auto;
+  background-color: transparent !important;
+}
+
+.logo > * {
+  
+  background-color: transparent !important;
+}
+
+.logoimage {
+  width: 11rem;
+}
+
+.appName h1 {
+  margin-top: 10px;
+  display: flex;
+  color: #1b1b53;
+  font-style: italic bold;
+  margin-right: 70em;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center; /* Ensure proper alignment */
+  gap: 20px;
+  font-weight: bold;
+  position: relative;
+  margin-top: 1rem !important; /* Removed unnecessary margin */
+}
+
+.nav-links > * {
+  box-sizing: border-box !important;
+}
+
+.linkWithLogo {
+  display: flex;
+  gap: 0.8rem;
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 0.5rem;
+  align-items: center !important;
+  justify-content: center !important;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  padding: 0.5rem;
+}
+
+.capsulebuttonsignup {
+  width: 8rem;
+  border-radius: 50px;
+  background-color: #18355B;
+  color: white !important;
+  padding: 0.8rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.capsulebuttonsignup:hover {
+  transition: ease-in-out 0.1s;
+  filter: brightness(1.1);
+}
+
+.linkWithLogo:hover {
+  border-bottom: solid thin black;
+  color: black;
+  font-weight: bold;
+}
+
+.loginLogo {
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center;
+}
+
+.loginLogo img {
+  width: 30rem !important;
+}
+
+.registerLogo {
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center;
+}
+
+.registerLogo img {
+  width: 30rem !important;
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 5%;
+  height: 90vh;
+}
+
+.loginForm {
+  width: 25rem;
+  display: block;
+}
+
+.registerForm {
+  width: 25rem;
+  display: block;
+}
+
+.welcomeTxt {
+  font-size: 35px;
+  font-style: bold;
+  color: #3d6eaf;
+}
+
+.createTxt {
+  font-size: 20px;
+  font-style: bold;
+  color: #3d6eaf;
+}
+
+.inputForms {
+  margin-top: 10px;
+  background-color: rgb(250, 251, 252);
+  border-color: rgb(223, 225, 230);
+  color: rgb(9, 30, 66);
+  cursor: text;
+  border-radius: 3px;
+  border-width: 2px;
+  border-style: solid;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: background-color 0.2s ease-in-out 0s,
+    border-color 0.2s ease-in-out 0s;
+  line-height: 10;
+  padding-block: 1.5rem !important;
+  padding-left: 1rem !important;
+  width: 100%;
+  max-height: 36px;
+  :hover {
+    background-color: rgb(235, 236, 240);
+  }
+  :focus {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(76, 154, 255);
+  }
+}
+
+.forgotPasstxt {
+  font-style: italic;
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 0.8rem;
+}
+
+.registerAccnt {
+  font-style: italic;
+  display: flex;
+  display: inline;
+}
+
+.loginAccnt {
+  font-style: italic;
+}
+
+.inputForms::placeholder {
+  color: rgb(146, 146, 148);
+}
+
+.checkBox {
+  margin-top: 10px;
+  display: flex;
+  gap: 1rem;
+}
+
+.errorInput {
+  width: 100% !important;
+  margin-top: 10px !important;
+  color: #a66;
+  word-wrap: break-word;
+  font-size: 0.8rem !important;
+}
+
+.buttonLogin {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  padding: 0px 123px;
+  background-color: #ffb03b;
+  border: 1px solid #0070d2;
+  color: #000000;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 40px;
+  font-weight: 500;
+  text-align: center;
+  :hover {
+    background-color: #005fb2;
+    border-color: #005fb2;
+  }
+
+  width: 100%;
+}
+
+.checkBoxLabel {
+  font-size: 0.8rem;
+}
+
+.bottomQuestion * {
+  font-size: 0.8rem;
+}
+.buttonRegister {
+  margin-top: 8px;
+  width: 100%;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  padding: 0px 92px;
+  background-color: #ffb03b;
+  border: 1px solid #0070d2;
+  color: #000000;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 40px;
+  font-weight: 500;
+  text-align: center;
+  :hover {
+    background-color: #005fb2;
+    border-color: #005fb2;
+  }
+}
+
+.hometext {
+  margin-top: 10px;
+}
+
+.home p {
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.home h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: bold;
+  color: #212365;
+  font-size: 50px;
+}
+
+.home h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+  color: #b2c0f4;
+  font-size: 30px;
+}
+
+.home h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+  color: #000000;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 91vh;
+  margin-top: auto;
+  margin-inline: 21rem;
+  position: relative;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+.homeLogo {
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 970px) {
+  .linkText {
+    display: none;
+  }
+
+  .home {
+    
+  margin-inline: 3rem;
+  }
+  .navbar {
+    padding-inline: 2rem !important;
+    padding-left: 3rem !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .navbar {
+    padding-inline: 1rem !important;
+  }
+
+  .home {
+    
+    margin-inline: 1rem;
+    }
+
+  .loginLogo img {
+    width: 22rem !important;
+  }
+
+  .registerLogo img {
+    width: 22rem !important;
+  }
+
+  .loginForm {
+    width: 22rem;
+  }
+
+  .registerForm {
+    width: 22rem;
+  }
+}
+
+/* Add Itinerary Dropdown */
+.addItineraryContainer {
+  position: relative;
+  display: flex;
+  gap: 0.8rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hoverContainer {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  right: 0px;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.addItineraryDropdownActive {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  width: 15rem;
+  max-height: 10rem;
+  justify-content: center;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 0 3.2px 7.2px 0 rgb(0 0 0 / 13%), 0 0.6px 1.8px 0 rgb(0 0 0 / 11%);
+}
+
+.addItineraryContainer:hover .hoverContainer {
+  display: flex;
+}
+
+.addItineraryOption {
+  font-size: 0.8rem !important;
+  text-align: left;
+  vertical-align: center;
+  font-weight: 600 !important;
+  width: 100%;
+}
+
+.addItineraryOption:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+.addItineraryDropdownActive .addItineraryOption:not(:last-child) {
+  border-bottom: solid 1px lightgray;
+}
+
+.addItineraryDropdownActive a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center; /* Vertically centers text */
+  justify-content: center; /* Horizontally centers text */
+  padding: 1rem; /* Ensures the entire area is clickable */
+  white-space: nowrap;
+}
+
+.addItineraryDropdownActive a:hover {
+  background-color: rgba(0, 7, 73, 0.1);
+}

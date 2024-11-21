@@ -1,0 +1,112 @@
+
+.logo {
+  display: flex;
+}
+
+.notificationsContainer {
+  position: relative;
+  display: flex;
+  gap: 0.8rem;
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 1rem;
+  align-items: center !important;
+  justify-content: center !important;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.hoverContainer {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  right: 0px;
+  z-index: 2 !important;
+  box-sizing: border-box;
+  
+}
+
+
+.notificationContentActive {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  width: 17rem;
+  max-height: 20rem;
+  justify-content: center;
+  cursor: hover;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 0 3.2px 7.2px 0 rgb(0 0 0 / 13%), 0 0.6px 1.8px 0 rgb(0 0 0 / 11%);
+  gap: 0px !important;
+  
+}
+
+/* width */
+.content::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+.content::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.content::-webkit-scrollbar-thumb {
+  background: rgba(0, 7, 73, 0.342);
+  border-radius: 10px;
+}
+
+.notificationsContainer:hover .hoverContainer {
+  display: flex;
+}
+
+.content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  border-top: solid thin #303030 !important;
+  overflow-y: auto;
+}
+
+
+.notifs {
+  flex: 1 !important; 
+  width: 100%;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important; 
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+
+.notifs:hover {
+  cursor: pointer;
+  background-color: rgb(221, 221, 221);
+}
+
+.content >.notifs:not(:last-child) {
+ 
+  border-bottom: solid thin lightgray;
+}
+.notificationContentActive h1 {
+  font-size: 1rem !important;
+  width: 100%;
+  padding: 1rem !important;  
+  max-height: 2.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.notificationContentActive p {
+  font-size: 0.8rem !important;
+  text-align: center;
+  vertical-align: center;
+  width: 100%;
+}
+

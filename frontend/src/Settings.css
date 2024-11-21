@@ -1,0 +1,202 @@
+.settings-container {
+    display: flex;
+    padding-inline: 15% !important; /* Sets padding on left and right */
+    padding-left: 15% !important; /* Additional left padding */
+    margin-top: 2%;
+    font-size: 40px; /* Adjusted font size */
+    font-weight: 500;
+    color: #333; /* Set font color to a dark gray */
+}
+.sidebar-button {
+    display: flex; /* Use flex for layout */
+    background-color: transparent; /* Set background color to transparent */
+    color: #333; /* Initial text color */
+    font-size: 15px; /* Adjusted font size */
+    font-weight: 400; /* Font weight */
+    padding: 0.5rem; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border: none; /* Remove default border */
+    border-bottom: 2px solid transparent; /* Bottom border, initially transparent */
+    border-radius: 0; /* No rounded corners for a cleaner look */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    position: relative; /* Position for hover effects */
+    transition: color 0.3s, border-bottom-color 0.3s; /* Smooth transition for color and border */
+}
+
+.sidebar-button:hover {
+    color: #007BFF; /* Change font color on hover */
+    border-bottom: 2px solid #007BFF; /* Show bottom border on hover */
+}
+
+/* Active state when the button is clicked */
+.sidebar-button.active {
+    color: #007BFF; /* Keep the font color when active */
+    border-bottom: 2px solid #007BFF; /* Keep the bottom border when active */
+}
+
+.content-input{
+    margin-top: 5% !important; 
+    margin-left: 5%;
+    
+}
+
+.edit-userprofile{
+    margin-top: 5% !important; 
+    margin-left: 5%;
+}
+
+.save-button{
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: #4299e1;
+    border-radius: 50px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    line-height: 26px;
+    margin-left: 35%;
+}
+
+.pcontainer {
+    position: static;
+    top: 50%;
+    left: 50%;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Space between radio buttons */
+}
+
+input[type="radio"] {
+    display: none; /* Hide the default radio button */
+}
+
+.pcontainer label {
+    font-size: 16px; /* Increased font size for labels */
+    padding: 10px 20px; /* Padding for better appearance */
+    cursor: pointer; /* Pointer cursor on hover */
+    background-color: white; /* Default background color */
+    border-radius: 5px; /* Slightly rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and color */
+    display: flex; /* Use flexbox for label */
+    flex-direction: column; /* Stack text vertically */
+}
+
+.pcontainer label::before {
+    content: "";
+    height: 10px;
+    width: 20px;
+    border: 3px solid #666;
+    border-radius: 100%;
+    margin-right: 10px; /* Adjusted margin */
+}
+
+.pcontainer input[type="radio"]:checked + label {
+    background-color: #d3d3d3; /* Grey background when checked */
+    color: black; /* Change text color to black when checked */
+}
+
+.pcontainer input[type="radio"]:checked + label::before {
+    background-color: #b49191; /* Change color of the circle when checked */
+    border: 10px solid white; /* Change border color */
+}
+
+.pcontainer label span {
+    font-weight: bold; /* Make the main label bold */
+}
+
+.pcontainer label .description {
+    font-weight: normal; /* Normal weight for description */
+    font-size: 14px; /* Slightly smaller font size for description */
+    color: #666; /* Description color */
+}
+
+.form {
+    margin-bottom: 15px;
+    width: 100%;
+}
+.form label {
+    display: block;
+    font-size: 10px;
+    color: #666;
+    margin-bottom: 1px;
+    text-align: left; /* Add this line */
+  }
+  .form input {
+    width: 100%; /* Adjusted width */
+    position: relative;
+    cursor: text;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 16px;
+    height: 48px;
+    background-color: #fff;
+    border: 1px solid #d6d6e7;
+    border-radius: 3px;
+    color: rgb(35, 38, 59);
+    box-shadow: inset 0 1px 4px 0 rgb(119 122 175 / 30%);
+    overflow: hidden;
+    transition: all 100ms ease-in-out;
+    :focus {
+      border-color: #3c4fe0;
+      box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
+    }
+  }
+.form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: none;
+    height: 50px;
+}
+
+.delete-account-button {
+    background-color: #e53e3e; /* Red background for emphasis */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Slightly rounded corners */
+    padding: 10px 20px; /* Padding for better appearance */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    margin-top: 20px; /* Margin for spacing */
+}
+
+.delete-account-button:hover {
+    background-color: #c53030; /* Darker red on hover */
+}
+
+.form h3 {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #007BFF; /* Change the color to your desired value */
+    margin-bottom: 10px; /* Optional: Add some space below the heading */
+}
+
+.form input[type="email"] {
+  width: 100%; /* Adjusted width */
+  position: relative;
+  cursor: text;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 16px;
+  height: 48px;
+  background-color: #fff;
+  border: 1px solid #d6d6e7;
+  border-radius: 3px;
+  color: rgb(35, 38, 59);
+  box-shadow: inset 0 1px 4px 0 rgb(119 122 175 / 30%);
+  overflow: hidden;
+  transition: all 100ms ease-in-out;
+}
+
+.form input[type="email"]:focus {
+  border-color: #3c4fe0;
+  box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
+}
+
+
+
