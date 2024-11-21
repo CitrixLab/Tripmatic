@@ -29,7 +29,7 @@ Option 1. Download localy to your computer:
 
    1. Click "<> Code" 
    2. See "Local"
-   3. Download in Zip File(Tripmatic.zip)
+   3. Download Zip: file name(Tripmatic.zip)
 
 Option 2. Clone this repository:
 
