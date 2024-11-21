@@ -25,7 +25,11 @@ It offers a one-stop solution for creating detailed itineraries, exploring user-
 
 **Instructions:**
 
-1. Clone this repository:
+Option 1. Download directly to your computer in Zip File(Tripmatic.zip)
+
+Option 2. Clone this repository:
 
    ```bash
    git clone [https://github.com/](https://github.com/)citrixlab/tripmatic.git
+
+
