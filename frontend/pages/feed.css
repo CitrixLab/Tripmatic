@@ -1,0 +1,163 @@
+
+
+.feedContainer {
+  display: flex;
+  min-height: 85vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center ;
+  padding-top: 4rem;
+}
+
+.feedBody {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.feedNav {
+  display: flex;
+  height: 3rem;
+
+}
+
+.feedLinkActive{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 1.5rem;
+  font-weight: bold;
+  border-bottom: solid 2px black;
+  cursor: pointer;
+}
+
+.feedLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 1.5rem;
+  
+  cursor: pointer;
+
+}
+
+.feedLinkActive:hover, .feedLink:hover {
+  background-color: whitesmoke;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+  
+}
+
+.feedContent {
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  transition: 0.5s ease-in;
+  animation: appear 1.5s linear forwards !important;
+}
+
+
+.feedCard {
+  display: flex;  
+  height: 20rem;
+  border-radius: 10px;
+  width: 19rem;
+  flex-direction: column;
+  gap: 0.5rem !important;
+  overflow-x: hidden;
+}
+
+.feedInformation {
+  display: flex;
+  flex-direction: column;
+  gap: 0px !important;
+}
+
+.feedCard h1 {
+  font-size: 1.5rem !important;
+}
+
+.feedImg {
+  object-fit: cover;
+  height: 10.5rem !important;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.feedImg:Hover {
+  width: 105%;  
+  transition: 0.5s ease-in;
+}
+
+.feedCardUserDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feedCardUser {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedCardUser h1 {
+  font-size: 1rem !important;
+}
+
+.feedUserImg {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+.feedCardDetails {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedHeart {
+  color: lightgray !important;
+  transition: 0.3s ease-in;
+}
+
+.feedHeart:hover {
+  cursor: pointer;
+  color: red !important
+}
+
+.hearted {
+  color: red !important
+  
+}
+
+
+.feedComment {
+  
+  color: lightgray !important;
+  transition: 0.3s ease-in;
+
+}
+
+.feedComment:hover {
+  cursor: pointer;
+  color: darkblue !important
+}
