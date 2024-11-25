@@ -76,7 +76,16 @@ function UserProfile() {
     const handleEditClick = () => {
         setShowModal(true);
     };
+    
 
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target === document.querySelector('.modal'))   
+      { // Target the modal element directly
+        setShowModal(false);
+      }
+    }
+    
     const fetchCurrentUser  = async () => {
         if (token) {
             const response = await axios.get("http://localhost:8081/user", {
