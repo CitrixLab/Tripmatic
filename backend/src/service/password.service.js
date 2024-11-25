@@ -3,7 +3,7 @@ const PendingEmail = require("../model/pending-email");
 const config = require("../config/auth.config");
 const encryptionService = require("./encryption.service");
 const emailService = require("./email.service");
-const TOKEN_EXPIRATION_MS = 3 * 24 * 60 * 60 * 1000; // 3 days
+const TOKEN_EXPIRATION_MS = 3 * 24 * 60 * 60 * 1000; // 3 days 
 
 const Knex = require("knex");
 const knexfile = require("../config/knexFile");
@@ -88,5 +88,46 @@ exports.processResetPasswordRequest = async (inputs) => {
     }
   } catch(error) {
     return false
+  }
+};
+
+
+/**
+ * Processes a password change request when a user provides their old password and a new password.
+ * 
+ * @param {Object} inputs - Contains oldPassword, newPassword, and userEmail.
+ * @returns {Object} - Returns a success flag and a message.
+ */
+exports.processPasswordChange = async ({ oldPassword, newPassword, userEmail }) => {
+  try {
+    // Step 1: Fetch the user based on their email
+    const user = await Accounts.getUserByEmail(userEmail);
+
+    // Check if user exists
+    if (!user || !user.id) {
+      return { success: false, message: "User not found." };
+    }
+
+    // Step 2: Verify that the old password matches the user's current password
+    const isOldPasswordValid = await encryptionService.comparePasswords(oldPassword, user.password);
+    if (!isOldPasswordValid) {
+      return { success: false, message: "Old password is incorrect." };
+    }
+
+    // Step 3: Hash the new password
+    const hashedNewPassword = await encryptionService.hashPassword(newPassword);
+
+    // Step 4: Update the password in the database
+    const updateResult = await Accounts.updateUser({ password: hashedNewPassword }, user.id);
+
+    // Check if the update was successful
+    if (updateResult) {
+      return { success: true, message: "Password changed successfully." };
+    } else {
+      return { success: false, message: "Failed to update password." };
+    }
+  } catch (error) {
+    console.error("Error in processPasswordChange:", error);
+    return { success: false, message: "Internal server error occurred." };
   }
 };
