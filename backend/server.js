@@ -5,11 +5,15 @@ const mysql = require("mysql");
 const cors = require("cors");
 const setupDb = require("./src/config/db-helper");
 const auth = require("./src/routes/auth.routes");
+const authRoutes = require('./src/routes/auth.routes'); 
 
 const { generateItinerary } = require("./openaiService");
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+// USING RECPATCHA FOR MITIGATING DDOS ATTACK
+const secretKey = process.env.RECAPTCHA_SECRET_KEY;
 
 const db = mysql.createConnection({
   host: "localhost",
@@ -22,6 +26,10 @@ app.use(express.json());
 setupDb();
 
 app.use(auth);
+//app.use('/auth', authRoutes);
+
+//console.log(auth.JWT_SECRET);
+//console.log(auth.recaptcha.siteKey);
 
 // Route to generate travel itineraries using OpenAI
 app.post("/generate-itinerary", async (req, res) => {
