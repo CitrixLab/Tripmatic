@@ -141,12 +141,11 @@ function Register() {
               and have read the <a href="#">Privacy Statement</a>.
             </label>
           </div>
-          <div>
+          <div>  
             <button
               type="submit"
               className="buttonRegister"
-              value="Register Account"
-            >
+              value="Register Account">
               Register Account
             </button>
           </div>

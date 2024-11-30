@@ -17,12 +17,12 @@ import ChangePassword from "./pages/reset-password/change-password.js";
 import "leaflet/dist/leaflet.css";
 
 function App() {
+
   const [isLoggedIn, setIsLoggedIn] = useState(() => {
     return localStorage.getItem("isLoggedIn") === "true";
   });
 
   const [profileCard, setProfileCard] = useState("https://placehold.co/400"); // Default profile image
-
   return (
     <BrowserRouter className="App">
       <Navbar

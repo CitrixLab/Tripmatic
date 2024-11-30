@@ -26,6 +26,6 @@ module.exports = {
   seeds: {
     directory: './seeds',
   },
-  ...knexSnakeCaseMappers,
-
+  ...knexSnakeCaseMappers(), // Call the function here
+  debug: true // Enable query logging
 };
